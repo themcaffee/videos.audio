@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>The Best Music Videos</title>
+    <style>
+      body {
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <iframe id="video" src="https://www.youtube.com/embed/videoseries?list=PLQ931W8JAdGvOUHAPfsQk7WG1Ah4jsAnT&rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script>
+      $(function(){
+        $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+
+        $(window).resize(function(){
+          $('#video').css({ width: $(window).innerWidth() + 'px', height: $(window).innerHeight() + 'px' });
+        });
+      });
+    </script>
+  </body>
+</html>
